@@ -50,7 +50,7 @@ NS_ASSUME_NONNULL_BEGIN
  *
  *  @return 经过base64编码的密文
  */
-- (nullable NSString *)desEncryptWithKey:(NSData *)key iv:(nullable NSData *)iv;
++ (nullable NSString *)desEncryptWithKey:(NSData *)key iv:(nullable NSData *)iv;
 
 /*!
  *  @brief DES解密（PKCS#7）
@@ -62,7 +62,7 @@ NS_ASSUME_NONNULL_BEGIN
  *
  *  @return 解密后的字符串
  */
-- (nullable NSString *)desDecryptWithKey:(NSData *)key iv:(nullable NSData *)iv;
++ (nullable NSString *)desDecryptWithKey:(NSData *)key iv:(nullable NSData *)iv;
 
 @end
 
