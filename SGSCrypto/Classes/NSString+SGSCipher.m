@@ -36,7 +36,7 @@
 }
 
 // DES加密
-- (NSString *)desEncryptWithKey:(NSData *)key iv:(NSData *)iv {
++ (NSString *)desEncryptWithKey:(NSData *)key iv:(NSData *)iv {
     NSStringEncoding encoding = NSUTF8StringEncoding;
     
     NSData *textData = [self dataUsingEncoding:encoding];
@@ -48,7 +48,7 @@
 }
 
 // DES解密
-- (NSString *)desDecryptWithKey:(NSData *)key iv:(NSData *)iv {
++ (NSString *)desDecryptWithKey:(NSData *)key iv:(NSData *)iv {
     if (self == nil) return nil;
     
     NSData *textData = [[NSData alloc] initWithBase64EncodedString:self options:NSDataBase64DecodingIgnoreUnknownCharacters];
